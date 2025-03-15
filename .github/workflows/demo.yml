@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: dist-files
+          name: dist-files${{ github.run_id }}
           path: dist
 
   deploy:
